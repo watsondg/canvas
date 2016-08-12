@@ -26,6 +26,11 @@ ctx.lineTo(25 * r, 70 * r);
 ctx.stroke();
 ```
 
+## Static Methods
+
+### Canvas.getDPI()
+Defines how the DPI (simple, retina, ...) is calculated. Useful to override if you want to defaults to some processed value based on performance and device. Defaults to `window.devicePixelRatio`.
+
 ## Instance Methods
 
 ### new Canvas([options])

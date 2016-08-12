@@ -6,7 +6,7 @@ function Canvas(options) {
     options = options || {};
     this.el = document.createElement('canvas');
     this.context = this.el.getContext('2d');
-    this.ratio = options.ratio || window.devicePixelRatio || 1;
+    this.ratio = options.ratio || Canvas.getDPI();
     this.width = 0;
     this.height = 0;
 
@@ -36,4 +36,8 @@ Canvas.prototype.destroy = function() {
     this.context = null;
     if (this.el.parentNode) this.el.parentNode.removeChild(this.el);
     this.el = null;
+};
+
+Canvas.getDPI = function() {
+    return window.devicePixelRatio || 1;
 };

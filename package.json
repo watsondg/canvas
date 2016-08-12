@@ -1,6 +1,6 @@
 {
   "name": "canvas",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A lightweight wrapper around the <canvas> element to ease context and ratio handling.",
   "main": "index.js",
   "scripts": {
